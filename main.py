@@ -1,6 +1,4 @@
-import os
-import json
-import sqlite3
+
 import asyncio
 import logging
 import aiohttp
@@ -329,13 +327,4 @@ async def main():
     init_db()
     logger.info("Elite system online. Running parallel loops & web server...")
     await asyncio.gather(
-        start_web_server(),
-        broadcast_elite_signals(),
-        run_elite_listener()
-    )
-
-if __name__ == "__main__":
-    try:
-        asyncio.run(main())
-    except KeyboardInterrupt:
-        logger.info("System stopped safely.")
+        
