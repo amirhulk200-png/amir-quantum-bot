@@ -17,7 +17,7 @@ logger = logging.getLogger("EliteEnterpriseBot")
 # ==========================================
 # مشخصات ربات و کانال
 # ==========================================
-TELEGRAM_BOT_TOKEN = "8241260358:AAGwwsRQU1R0qiOdl0Rlcb21L5fhYzhXt20"
+TELEGRAM_BOT_TOKEN = 8241260358:AAGwwsRQU1R0qiOdl0Rlcb21L5fhYzhXt20
 # یوزرنیم دقیق کانال عمومی شما
 PUBLIC_CHANNEL_ID = "@AMIR_QUANTUM_SIGNALS"
 ADMIN_USER_ID = 6506567538
@@ -326,5 +326,4 @@ async def start_web_server():
 async def main():
     init_db()
     logger.info("Elite system online. Running parallel loops & web server...")
-    await asyncio.gather(
-        
+    await asyncio.gather
